@@ -9,9 +9,7 @@ public class MoveFundoInfinitamente : MonoBehaviour {
 	float tamanhoDoAsset, posicaoInicial;
 
 	void Start () {
-		//Seta a posição inicial do Asset
-		posicaoInicial = transform.localPosition.x;
-		//Pega o tamanho do asset
+		//
 		SpriteRenderer sr = transform.GetChild (0).GetComponent<SpriteRenderer> ();
 		if (sr != null) {
 			tamanhoDoAsset = sr.sprite.textureRect.width / sr.sprite.pixelsPerUnit;
@@ -19,10 +17,17 @@ public class MoveFundoInfinitamente : MonoBehaviour {
 			Debug.LogError ("Primeiro filho não tem componente SpriteRenderer!");
 		}
 
-		//Clona e posiciona o asset
-		GameObject clone = GameObject.Instantiate (transform.GetChild(0).gameObject);
-		clone.transform.SetParent (this.transform);
-		clone.transform.localPosition = new Vector3 (tamanhoDoAsset, 0, 0);
+		//Seta a posição inicial do Asset
+		posicaoInicial = transform.localPosition.x;
+
+		// Valida o valor de posição inicial
+		if (posicaoInicial < 0) {
+			posicaoInicial = -posicaoInicial;
+			if(posicaoInicial<0){
+				Debug.LogError("?!?");
+			}
+		}
+
 	}
 	
 	// Update is called once per frame
