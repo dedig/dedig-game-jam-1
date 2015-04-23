@@ -5,8 +5,8 @@ using System.Collections;
 /// </summary>
 public class MoveFundoInfinitamente : MonoBehaviour {
 
-	public float velocidade;
-	float tamanhoDoAsset, posicaoInicial;
+	public static float velocidade;
+	static float tamanhoDoAsset, posicaoInicial;
 
 	void Start () {
 		//
@@ -20,10 +20,10 @@ public class MoveFundoInfinitamente : MonoBehaviour {
 		//Seta a posição inicial do Asset
 		posicaoInicial = transform.localPosition.x;
 
-		// Valida o valor de posição inicial
-		if (posicaoInicial < 0) {
-			posicaoInicial = -posicaoInicial;
-			if(posicaoInicial<0){
+		// Valida o valor de velocidade
+		if (velocidade < 0) {
+			velocidade = -velocidade;
+			if(velocidade<0){
 				Debug.LogError("?!?");
 			}
 		}

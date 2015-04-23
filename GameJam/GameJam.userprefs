@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DuplicaFundo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControladorArvores.cs">
     <Files>
-      <File FileName="Assets/Scripts/DuplicaFundo.cs" Line="5" Column="2" />
+      <File FileName="Assets/Scripts/DuplicaFundo.cs" Line="21" Column="3" />
+      <File FileName="Assets/Scripts/ControladorArvores.cs" Line="27" Column="75" />
+      <File FileName="Assets/Scripts/MoveFundoInfinitamente.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
