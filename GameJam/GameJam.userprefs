@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Rodar.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GeradorDeTiles.cs">
     <Files>
-      <File FileName="Assets\Rodar.cs" Line="13" Column="38" />
+      <File FileName="Assets\Scripts\GeradorDeTiles.cs" Line="13" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
