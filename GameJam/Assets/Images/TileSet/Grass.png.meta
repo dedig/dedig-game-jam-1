@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c6dd7a6df8154d4409ac520aa10f4941
-timeCreated: 1429795491
+timeCreated: 1429799814
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -66,7 +66,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -80,7 +80,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 69
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -93,7 +93,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_1
@@ -103,7 +103,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_2
@@ -113,7 +113,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_3
@@ -123,7 +123,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_4
@@ -133,7 +133,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_5
@@ -143,7 +143,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_6
@@ -153,7 +153,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_7
@@ -163,7 +163,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_8
@@ -173,7 +173,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_9
@@ -183,7 +183,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_10
@@ -193,7 +193,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_11
@@ -203,7 +203,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_12
@@ -213,7 +213,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_13
@@ -223,7 +223,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_14
@@ -233,7 +233,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_15
@@ -243,7 +243,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_16
@@ -253,7 +253,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_17
@@ -263,7 +263,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_18
@@ -273,7 +273,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_19
@@ -283,7 +283,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_20
@@ -293,7 +293,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_21
@@ -303,7 +303,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_22
@@ -313,7 +313,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_23
@@ -323,8 +323,8 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_24
       rect:
@@ -333,7 +333,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_25
@@ -343,7 +343,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_26
@@ -353,7 +353,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_27
@@ -363,7 +363,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_28
@@ -373,7 +373,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_29
@@ -383,7 +383,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_30
@@ -393,7 +393,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_31
@@ -403,7 +403,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_32
@@ -413,7 +413,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_33
@@ -423,7 +423,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_34
@@ -433,7 +433,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_35
@@ -443,7 +443,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Grass_36
@@ -453,7 +453,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
