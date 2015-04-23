@@ -9,8 +9,8 @@ public class GeradorDeTiles : MonoBehaviour {
 		posicionar ();
 	}
 	
-	void Update () {
-		this.transform.Translate ((Vector3.left * Time.deltaTime)* ControladorColunas.velocidade );
+	void FixedUpdate () {
+		this.transform.Translate ((Vector3.left * ControladorColunas.velocidade)* Time.deltaTime);
 		if (this.transform.position.x <= ControladorColunas.morte) {
 			respawn();
 		}
@@ -23,12 +23,51 @@ public class GeradorDeTiles : MonoBehaviour {
 	}
 
 	void posicionar(){
-		altura = Random.Range (0, 5);
+		altura = calcularProximo ();//Random.Range (0, 5);
 
 		//Trabalhar com o algoritimo para gerar as colunas de maneira harmoica
+		
+		//
 
 		this.transform.Translate (Vector3.up * altura);
 		ControladorColunas.step(altura);
 
+	}
+
+	int calcularProximo(){
+		if (Random.Range (0, 100) >= 90) {
+			if (ControladorColunas.ultimaAltura == 0 && ControladorColunas.penultimaAltura == 0){
+				if(Random.Range(0,2)==0){
+					return ControladorColunas.AntiPenultimaAltura;
+				}
+				else{
+					if(ControladorColunas.AntiPenultimaAltura > 1){
+						return ControladorColunas.AntiPenultimaAltura -1;
+					}
+					else{
+						return 0;
+					}
+				}
+			}
+			else{
+				return 0;
+			}
+		} else {
+			switch (ControladorColunas.ultimaAltura) {
+			case 5:
+				return Random.Range (3, 5);
+			case 4:
+				return Random.Range (2, 5);
+			case 3:
+				return Random.Range (1, 5);
+			case 2:
+				return Random.Range (1, 4);
+			case 1:
+				return Random.Range (1, 3);
+			case 0:
+				return Random.Range (1, 3);
+			}
+		}
+		return 0;
 	}
 }
