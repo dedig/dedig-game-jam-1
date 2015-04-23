@@ -12,7 +12,9 @@ public class ControladorColunas : MonoBehaviour {
 	public static int ultimaAltura,penultimaAltura,AntiPenultimaAltura;
 
 	void Start () {
-	
+		velocidade = velocidadeDasColunas;
+		morte = localDaMorte;
+		nascimento = LocalDoNascimento;
 	}
 	
 	void Update () {
