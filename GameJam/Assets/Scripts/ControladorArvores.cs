@@ -1,15 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ControladorArvores : MonoBehaviour {
 
-	// Use this for initialization
+	List<GameObject> arvores = new List<GameObject>();
+	public static float velocidade;
+
 	void Start () {
-	
+		//Adiciona filhas em uma lista
+		foreach (Transform child in transform) {
+			arvores.Add(child.gameObject);
+			print (child.name);
+		}
+
+		//Valida velocidade
+		if (velocidade < 0) {
+			velocidade = -velocidade;
+			if(velocidade<0){
+				Debug.LogError("?!?");
+			}
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void Update(){
+		transform.Translate (new Vector3((-velocidade * Time.deltaTime), 0, 0));
 	}
 }
