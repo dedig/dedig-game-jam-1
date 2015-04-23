@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ControladorColunas.cs" />
      <Compile Include="Assets\Scripts\GeradorDeTiles.cs" />
      <Compile Include="Assets\Scripts\Pulo.cs" />
  <Reference Include="UnityEngine.UI">
