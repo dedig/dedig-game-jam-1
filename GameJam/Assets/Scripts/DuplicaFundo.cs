@@ -19,4 +19,9 @@ public class DuplicaFundo : MonoBehaviour {
 		clone.transform.SetParent (this.transform);
 		clone.transform.localPosition = new Vector3 (tamanhoDoAsset, 0, 0);
 	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
 }
