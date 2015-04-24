@@ -53,6 +53,8 @@
      <Compile Include="Assets\Scripts\GeradorDeTiles.cs" />
      <Compile Include="Assets\Scripts\MoveFundoInfinitamente.cs" />
      <Compile Include="Assets\Scripts\Pulo.cs" />
+     <Compile Include="Assets\Scripts\UIMainMenu.cs" />
+     <Compile Include="Assets\Scripts\UIMenuDeDerrota.cs" />
      <Compile Include="Assets\Scripts\UIMenuDePausa.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
