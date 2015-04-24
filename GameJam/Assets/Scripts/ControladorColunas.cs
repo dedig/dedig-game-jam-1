@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 public class ControladorColunas : MonoBehaviour {
 
@@ -9,7 +10,7 @@ public class ControladorColunas : MonoBehaviour {
 	public int velocidadeDasColunas, localDaMorte, LocalDoNascimento;
 	public float pontuaocaoRatio;
 	public GameObject texto,best;
-
+	public List<GameObject> Colunas;
 
 	public static int velocidade;
 	public static int morte;
@@ -23,6 +24,14 @@ public class ControladorColunas : MonoBehaviour {
 	public static int ultimaAltura,penultimaAltura,AntiPenultimaAltura;
 
 	void Start () {
+		//gerar tiles
+		int TileRandom = Random.Range (0, Colunas.Count);
+		for (byte i = 0; i <=18; i++) {
+			Instantiate(Colunas[TileRandom],new Vector3(i,0,0),Quaternion.identity);
+		}
+
+		//
+
 
 		t = texto.GetComponent<Text> ();
 		b = best.GetComponent<Text> ();

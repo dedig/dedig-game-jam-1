@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bf89c5f5f28b3c5468df145b16c0d2bf
-timeCreated: 1429795457
+timeCreated: 1429904638
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,7 +70,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -84,7 +84,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 69
+  spritePixelsToUnits: 67
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -97,7 +97,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_1
@@ -107,7 +107,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_2
@@ -117,7 +117,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_3
@@ -127,7 +127,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_4
@@ -137,7 +137,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_5
@@ -147,7 +147,7 @@ TextureImporter:
         y: 442
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_6
@@ -157,7 +157,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_7
@@ -167,7 +167,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_8
@@ -177,7 +177,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_9
@@ -187,7 +187,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_10
@@ -197,7 +197,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_11
@@ -207,7 +207,7 @@ TextureImporter:
         y: 372
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_12
@@ -217,7 +217,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_13
@@ -227,7 +227,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_14
@@ -237,7 +237,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_15
@@ -247,7 +247,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_16
@@ -257,7 +257,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_17
@@ -267,7 +267,7 @@ TextureImporter:
         y: 302
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_18
@@ -277,7 +277,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_19
@@ -287,7 +287,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_20
@@ -297,7 +297,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_21
@@ -307,7 +307,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_22
@@ -317,7 +317,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_23
@@ -327,7 +327,7 @@ TextureImporter:
         y: 232
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_24
@@ -337,7 +337,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_25
@@ -347,7 +347,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_26
@@ -357,7 +357,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_27
@@ -367,7 +367,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_28
@@ -377,7 +377,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_29
@@ -387,7 +387,7 @@ TextureImporter:
         y: 162
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_30
@@ -397,7 +397,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_31
@@ -407,7 +407,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_32
@@ -417,7 +417,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_33
@@ -427,7 +427,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_34
@@ -437,7 +437,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_35
@@ -447,7 +447,7 @@ TextureImporter:
         y: 92
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_36
@@ -457,7 +457,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_37
@@ -467,7 +467,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_38
@@ -477,7 +477,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_39
@@ -487,7 +487,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Choco_40
@@ -497,7 +497,7 @@ TextureImporter:
         y: 22
         width: 70
         height: 70
-      alignment: 1
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
