@@ -14,7 +14,7 @@ public class ControladorColunas : MonoBehaviour {
 	public static int velocidade;
 	public static int morte;
 	public static int nascimento;
-	public static float pontuacao;
+	public static float pontuacao = 0;
 	public static float multiplicadorDaPontucao;
 	
 
@@ -23,6 +23,7 @@ public class ControladorColunas : MonoBehaviour {
 	public static int ultimaAltura,penultimaAltura,AntiPenultimaAltura;
 
 	void Start () {
+
 		t = texto.GetComponent<Text> ();
 		b = best.GetComponent<Text> ();
 		velocidade = velocidadeDasColunas;

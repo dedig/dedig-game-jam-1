@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControladorArvores.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ControladorColunas.cs">
     <Files>
-      <File FileName="Assets/Scripts/DuplicaFundo.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ControladorArvores.cs" Line="25" Column="5" />
-      <File FileName="Assets/Scripts/MoveFundoInfinitamente.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GeradorDeTiles.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GeradorDeTiles.cs" Line="41" Column="14" />
+      <File FileName="Assets\mortePersonagem.cs" Line="6" Column="29" />
+      <File FileName="Assets\Scripts\ControladorColunas.cs" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

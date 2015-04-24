@@ -6,7 +6,7 @@ public class GeradorDeTiles : MonoBehaviour {
 	public int altura;
 
 	void Start () {
-		posicionar ();
+		this.transform.Translate (Vector3.up);
 	}
 	
 	void FixedUpdate () {
@@ -23,25 +23,25 @@ public class GeradorDeTiles : MonoBehaviour {
 	}
 
 	void posicionar(){
-		altura = calcularProximo ();//Random.Range (0, 5);
+		altura = calcularProximo ();
 
-		//Trabalhar com o algoritimo para gerar as colunas de maneira harmoica
-		
-		//
+
 
 		this.transform.Translate (Vector3.up * altura);
 		ControladorColunas.step(altura);
 
 	}
 
+
+
 	int calcularProximo(){
 		if (Random.Range (0, 100) >= 90) {
 			if (ControladorColunas.ultimaAltura == 0 && ControladorColunas.penultimaAltura == 0){
 				if(Random.Range(0,2)==0){
-					return ControladorColunas.AntiPenultimaAltura;
+					return 1;
 				}
 				else{
-					if(ControladorColunas.AntiPenultimaAltura > 1){
+					if(ControladorColunas.AntiPenultimaAltura > 0){
 						return ControladorColunas.AntiPenultimaAltura -1;
 					}
 					else{
