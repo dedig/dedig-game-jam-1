@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ControladorArvores.cs" />
      <Compile Include="Assets\Scripts\ControladorColunas.cs" />
+     <Compile Include="Assets\Scripts\ControleDePulo.cs" />
      <Compile Include="Assets\Scripts\DuplicaFundo.cs" />
      <Compile Include="Assets\Scripts\GeradorDeTiles.cs" />
      <Compile Include="Assets\Scripts\MoveFundoInfinitamente.cs" />
