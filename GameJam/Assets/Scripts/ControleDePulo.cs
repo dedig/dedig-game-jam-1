@@ -9,13 +9,21 @@ public class ControleDePulo : MonoBehaviour {
 
 	private CharacterController myController;
 	//private Rigidbody myRigid;
-	private Vector3 moveDir;
+	public Vector3 moveDir;
 	private float gravity;
-	[SerializeField]
-	private float jumpForce = 7;
+
+	public bool apertandoPulo;
+	public float timeStartPulo;
+	public float timeNowPulo;
+	public float currentPuloIncrement;
+
+	
+	public float baseJumpForce = 6;
+
+	public float jumpForceIncrement = 20;
 
 	public bool isGrounded;
-	public bool pulando = false;
+	public bool noArPulando = false;
 
 
 	// Use this for initialization
@@ -23,28 +31,40 @@ public class ControleDePulo : MonoBehaviour {
 		myController = GetComponent<CharacterController> ();
 		//myRigid = GetComponent<Rigidbody> ();
 		gravity = Physics.gravity.y;
+
+		// da um move soh pra pegar a situacao inicial de grounded
+		myController.Move (Vector3.zero);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		isGrounded = myController.isGrounded;
 
-		if (isGrounded && pulando) {
-			pulando = false;
-			Debug.Log("cabou pulo");
+
+		if (isGrounded && noArPulando) {
+			noArPulando = false;
+			//Debug.Log("cabou pulo");
 		}
 
 
 		//confere se teve os toque
-		//TODO arrumar a queda livre (nao originaria de pulo, pq ta caindo mt rapido)
+		//TODO o jogador deve poder controlar o seu pulo segurando o botao
 
-		if(isGrounded && (Input.touchCount > 0 || Input.GetButtonDown("Pular"))) {
 
-			//TODO tem q conferir q nao esta apertando o botao de pause ou coisa parecida
+		if (apertandoPulo) {
+			Debug.Log("wiiii");
+			timeNowPulo = Time.time - timeStartPulo;
 
-			moveDir.y = jumpForce;
-			pulando = true;
-			isGrounded = false;
+			currentPuloIncrement = (jumpForceIncrement * Time.deltaTime) - timeNowPulo;
+
+			//diminishing returns por continuar apertando o botao... ate que deixa de afetar
+			if(currentPuloIncrement > 0){
+				moveDir.y += currentPuloIncrement;
+			}
+		}
+
+		if (Input.GetButtonUp ("Pular")) {
+			apertandoPulo = false;
 		}
 
 		if(!isGrounded)
@@ -55,18 +75,25 @@ public class ControleDePulo : MonoBehaviour {
 		myController.Move(moveDir * Time.deltaTime);
 
 		//checa de novo se nao mudou a situacao do grounded
-		if (myController.isGrounded && !isGrounded && !pulando) {
+		if (myController.isGrounded && !isGrounded) {
 			Debug.Log("mudou");
 			isGrounded = true;
 			moveDir.y = 0;
 		}
+
+		if(isGrounded && (Input.touchCount > 0 || Input.GetButtonDown("Pular"))) {
+			
+			//TODO tem q conferir q nao esta apertando o botao de pause ou coisa parecida
+			apertandoPulo = true;
+			timeStartPulo = Time.time;
+			Debug.Log(timeStartPulo.ToString());
+			noArPulando = true;
+			isGrounded = false;
+			moveDir.y = baseJumpForce;
+		}
 		
 	}
 
-	/*void LateUpdate(){
-		Debug.Log ("leite");
 
-		if(isGrounded && myController.isGrounded
-	}*/
 
 }
