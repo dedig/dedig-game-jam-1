@@ -54,8 +54,13 @@
      <Compile Include="Assets\Scripts\MoveFundoInfinitamente.cs" />
      <Compile Include="Assets\Scripts\Pulo.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <Compile Include="Assets\mortePersonagem.cs" />
 =======
+=======
+     <Compile Include="Assets\Scripts\UIMainMenu.cs" />
+     <Compile Include="Assets\Scripts\UIMenuDeDerrota.cs" />
+>>>>>>> ui-development
      <Compile Include="Assets\Scripts\UIMenuDePausa.cs" />
 >>>>>>> ui-development
  <Reference Include="UnityEngine.UI">

@@ -1,25 +1,17 @@
-# Gerados pela Unity #
-
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-sysinfo.txt
-
-# MonoDevelop, VisualStudio, etc #
-ExportedObj/
-*.svd
-*.userprefs
-*.csproj
-*.pidb
-*.suo
-*.sln
-*.user
-*.unityproj
-*.booproj
-
-# Windows e OS X #
-
+GameJam/*.csproj
+GameJam/*.sln
+GameJam/guidmapper
+GameJam/expandedItems
+GameJam/[Ll]ibrary/metadata/
+GameJam/ExportedObj/
+GameJam/*.svd
+GameJam/*.userprefs
+GameJam/*.pidb
+GameJam/*.suo
+GameJam/*.user
+GameJam/*.unityproj
+GameJam/*.booproj
+GameJam/[Tt]emp/
 .DS_Store
 .DS_Store?
 ._*
