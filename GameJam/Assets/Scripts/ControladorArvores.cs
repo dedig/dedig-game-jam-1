@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ControladorArvores : MonoBehaviour {
 	List<GameObject> arvores = new List<GameObject>();
