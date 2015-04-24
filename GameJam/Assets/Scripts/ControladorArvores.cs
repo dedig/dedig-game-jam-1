@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ControladorArvores : MonoBehaviour {
 	List<GameObject> arvores = new List<GameObject>();
 
 	public float velocidade;
+	float velocidadeVerdadeira;
 	public Vector2 randomRange = new Vector2();
 	
 	void Start () {
@@ -14,7 +16,7 @@ public class ControladorArvores : MonoBehaviour {
 		}
 		
 		//Valida velocidade
-		velocidade *= ControladorColunas.velocidade;
+		velocidadeVerdadeira = ControladorColunas.velocidade * velocidade;
 		
 		if (velocidade < 0) {
 			velocidade = -velocidade;

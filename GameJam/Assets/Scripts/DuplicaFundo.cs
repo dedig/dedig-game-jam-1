@@ -17,11 +17,6 @@ public class DuplicaFundo : MonoBehaviour {
 		//Clona e posiciona o asset
 		GameObject clone = GameObject.Instantiate (transform.GetChild(0).gameObject);
 		clone.transform.SetParent (this.transform);
-		clone.transform.localPosition = new Vector3 (tamanhoDoAsset, 0, 0);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		clone.transform.localPosition = new Vector3 (tamanhoDoAsset, transform.localPosition.y, transform.localPosition.z);
 	}
 }
