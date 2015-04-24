@@ -16,13 +16,21 @@ public class ControladorArvores : MonoBehaviour {
 		}
 		
 		//Valida velocidade
-		velocidadeVerdadeira = ControladorColunas.velocidade * velocidade;
-		
 		if (velocidade < 0) {
 			velocidade = -velocidade;
 			if(velocidade<0){
 				Debug.LogError("?!?");
 			}
+		}
+
+		// Multiplica velocidade do fundo pela velocidade dos tiles
+		velocidadeVerdadeira = ControladorColunas.velocidade * velocidade;
+
+		if (velocidadeVerdadeira == 0) {
+			print (ControladorColunas.velocidade);
+			print (velocidade);
+			print (ControladorColunas.velocidade * velocidade);
+			Debug.LogError("Velocidade 0!!111");
 		}
 		
 		//Valida randomRange
@@ -32,7 +40,7 @@ public class ControladorArvores : MonoBehaviour {
 	}
 	
 	void Update(){
-		transform.Translate (new Vector3((-velocidade * Time.deltaTime), 0, 0));
+		transform.Translate (new Vector3((-velocidadeVerdadeira * Time.deltaTime), 0, 0));
 		foreach(GameObject arvore in arvores){
 			if(arvore.transform.position.x <= -12){
 				arvore.transform.Translate(new Vector3(24 + Random.Range (randomRange.x, randomRange.y),0,0));
