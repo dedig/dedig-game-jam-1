@@ -77,7 +77,7 @@ public class ControleDePulo : MonoBehaviour {
 
 
 
-
+		//as
 		myController.Move(moveDir * Time.deltaTime);
 
 		//checa de novo se nao mudou a situacao do grounded
