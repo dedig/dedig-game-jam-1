@@ -19,7 +19,7 @@ public class ControleDePulo : MonoBehaviour {
 
 	
 	public float baseJumpForce = 6;
-
+	public AudioSource puloSound;
 	public float jumpForceIncrement = 20;
 
 	private bool isGrounded;
@@ -94,6 +94,7 @@ public class ControleDePulo : MonoBehaviour {
 			noArPulando = true;
 			isGrounded = false;
 			moveDir.y = baseJumpForce;
+			puloSound.Play();
 		}
 		
 	}
