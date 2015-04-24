@@ -19,7 +19,7 @@ public class ControleDePulo : MonoBehaviour {
 
 	
 	public float baseJumpForce = 6;
-
+	public AudioSource puloSound;
 	public float jumpForceIncrement = 20;
 
 	private bool isGrounded;
@@ -27,6 +27,8 @@ public class ControleDePulo : MonoBehaviour {
 
 	private bool supportsTouch = false;
 	private Touch theTouch;
+
+	private Animator anim;
 
 
 	// Use this for initialization
@@ -37,7 +39,7 @@ public class ControleDePulo : MonoBehaviour {
 
 		// da um move soh pra pegar a situacao inicial de grounded
 		myController.Move (Vector3.zero);
-
+		anim = GetComponentInChildren<Animator> ();
 		//se nao puder usar touch, nem tenta dps
 		supportsTouch = Input.touchSupported;
 		Debug.Log ("Suporte a touch? " + supportsTouch.ToString());
@@ -68,8 +70,11 @@ public class ControleDePulo : MonoBehaviour {
 			apertandoPulo = false;
 		}
 
-		if(!isGrounded)
-		moveDir.y += gravity * Time.deltaTime;
+		if (!isGrounded) {
+			moveDir.y += gravity * Time.deltaTime;
+			anim.SetBool("air", true);
+		}
+
 
 
 
@@ -79,6 +84,7 @@ public class ControleDePulo : MonoBehaviour {
 		if (myController.isGrounded && !isGrounded) {
 			//Debug.Log("mudou");
 			isGrounded = true;
+			anim.SetBool("air", false);
 			moveDir.y = 0;
 		}
 
@@ -94,6 +100,10 @@ public class ControleDePulo : MonoBehaviour {
 			noArPulando = true;
 			isGrounded = false;
 			moveDir.y = baseJumpForce;
+			puloSound.Play();
+			anim.Play("jump");
+			anim.SetBool("air", true);
+
 		}
 		
 	}
