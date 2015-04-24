@@ -9,21 +9,21 @@ public class ControleDePulo : MonoBehaviour {
 
 	private CharacterController myController;
 	//private Rigidbody myRigid;
-	public Vector3 moveDir;
+	private Vector3 moveDir;
 	private float gravity;
 
-	public bool apertandoPulo;
-	public float timeStartPulo;
-	public float timeNowPulo;
-	public float currentPuloIncrement;
+	private bool apertandoPulo;
+	private float timeStartPulo;
+	private float timeNowPulo;
+	private float currentPuloIncrement;
 
 	
 	public float baseJumpForce = 6;
 
 	public float jumpForceIncrement = 20;
 
-	public bool isGrounded;
-	public bool noArPulando = false;
+	private bool isGrounded;
+	private bool noArPulando = false;
 
 
 	// Use this for initialization
