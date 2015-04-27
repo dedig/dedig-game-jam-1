@@ -9,8 +9,13 @@ public class ControladorArvores : MonoBehaviour {
 	float velocidadeVerdadeira;
 	public Vector2 randomRange = new Vector2();
 	public int fimCamera, inicioCamera;
+	public static int fimCameraVerdadeiro, inicioCameraVerdadeiro;
 	
 	void Start () {
+		//
+		fimCameraVerdadeiro = fimCamera;
+		inicioCameraVerdadeiro = inicioCamera;
+
 		//Adiciona filhas em uma lista
 		foreach (Transform child in transform) {
 			arvores.Add(child.gameObject);
