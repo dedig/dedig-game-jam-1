@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5daaf972ce6da22458a87e4a49962f47
-timeCreated: 1429906420
+timeCreated: 1430141221
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,18 @@ TextureImporter:
     21300018: greenJump0
     21300020: greenFly0
     21300022: greenFly1
+    21300024: bluRun0
+    21300026: bluRun1
+    21300028: bluJump0
+    21300030: bluJump1
+    21300032: bluFly0
+    21300034: bluFly1
+    21300036: yelRun0
+    21300038: yelRun1
+    21300040: yelJump0
+    21300042: yelJump1
+    21300044: yelFly0
+    21300046: yelFly1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -135,9 +147,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 277
-        y: 143
+        y: 144
         width: 67
-        height: 93
+        height: 92
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,6 +190,126 @@ TextureImporter:
         y: 222
         width: 69
         height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bluRun0
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 241
+        width: 66
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bluRun1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 152
+        width: 65
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bluJump0
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 169
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bluJump1
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 149
+        width: 65
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bluFly0
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 37
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bluFly1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 315
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: yelRun0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 69
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: yelRun1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 236
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: yelJump0
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 159
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: yelJump1
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 337
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: yelFly0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 332
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: yelFly1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 228
+        width: 68
+        height: 86
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
