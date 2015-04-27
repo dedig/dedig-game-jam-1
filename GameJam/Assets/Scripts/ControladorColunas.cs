@@ -11,6 +11,7 @@ public class ControladorColunas : MonoBehaviour {
 	public float pontuaocaoRatio;
 	public GameObject texto,best;
 	public List<GameObject> Colunas;
+	public int incrementoDaVelocidade;
 
 	public static int velocidade;
 	public static int morte;
@@ -55,7 +56,9 @@ public class ControladorColunas : MonoBehaviour {
 		pontuacaoLocal += Time.deltaTime;
 		pontuacao = Mathf.Floor(pontuacaoLocal*pontuaocaoRatio);
 		t.text = pontuacao.ToString();
-
+		if (pontuacao % 100 == 0) {
+			velocidade += incrementoDaVelocidade;
+		}
 
 	}
 

@@ -38,7 +38,7 @@ public class ControleDePulo : MonoBehaviour {
 		myController.Move (Vector3.zero);
 		anim = GetComponentInChildren<Animator> ();
 		supportsTouch = Input.touchSupported;
-		Debug.Log ("Suporte a touch? " + supportsTouch.ToString());
+		//Debug.Log ("Suporte a touch? " + supportsTouch.ToString());
 	}
 	
 	// Update is called once per frame
