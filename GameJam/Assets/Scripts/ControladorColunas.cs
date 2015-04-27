@@ -56,7 +56,7 @@ public class ControladorColunas : MonoBehaviour {
 		pontuacaoLocal += Time.deltaTime;
 		pontuacao = Mathf.Floor(pontuacaoLocal*pontuaocaoRatio);
 		t.text = pontuacao.ToString();
-		if (pontuacao % 100 == 0) {
+		if (pontuacao % 25 == 0) {
 			velocidade += incrementoDaVelocidade;
 		}
 
