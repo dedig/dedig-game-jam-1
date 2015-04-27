@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UIMainMenu : MonoBehaviour {
 
-	public GameObject pauseMenu;
+	public GameObject pauseMenu, scoreCanvas;
 	public GameObject somHabilitado, somDesabilitado;
 	static bool audioHabilitado = true;
 
@@ -16,6 +16,7 @@ public class UIMainMenu : MonoBehaviour {
 	}
 
 	public void IniciaJogo(){
+		scoreCanvas.SetActive (true);
 		pauseMenu.SetActive (true);
 		gameObject.SetActive (false);
 	}

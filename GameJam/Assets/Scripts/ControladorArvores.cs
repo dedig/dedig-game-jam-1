@@ -8,6 +8,7 @@ public class ControladorArvores : MonoBehaviour {
 	public float velocidade;
 	float velocidadeVerdadeira;
 	public Vector2 randomRange = new Vector2();
+	public int fimCamera, inicioCamera;
 	
 	void Start () {
 		//Adiciona filhas em uma lista
@@ -39,8 +40,8 @@ public class ControladorArvores : MonoBehaviour {
 	void Update(){
 		transform.Translate (new Vector3((-velocidadeVerdadeira * Time.deltaTime), 0, 0));
 		foreach(GameObject arvore in arvores){
-			if(arvore.transform.position.x <= -12){
-				arvore.transform.Translate(new Vector3(24 + Random.Range (randomRange.x, randomRange.y),0,0));
+			if(arvore.transform.position.x <= -fimCamera){
+				arvore.transform.Translate(new Vector3(inicioCamera + Random.Range (randomRange.x, randomRange.y),0,0));
 			}
 		}
 	}
