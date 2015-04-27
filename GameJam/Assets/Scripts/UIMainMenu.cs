@@ -7,9 +7,11 @@ public class UIMainMenu : MonoBehaviour {
 	public GameObject pauseMenu, scoreCanvas;
 	public GameObject somHabilitado, somDesabilitado;
 	public GameObject textoJogar;
+	public int margemTexto;
 	RectTransform textoRect;
 	static bool audioHabilitado = true;
 	float posicaoTexto = 1.0f;
+
 
 	void Start(){
 		// Validação de menu de pausa
@@ -42,6 +44,7 @@ public class UIMainMenu : MonoBehaviour {
 
 	void FixedUpdate(){
 		posicaoTexto = Mathf.Sin (Time.time);
+		posicaoTexto = posicaoTexto*50 + margemTexto;
 		textoRect.anchoredPosition = new Vector2 (textoRect.anchoredPosition.x, posicaoTexto);
 	}
 
