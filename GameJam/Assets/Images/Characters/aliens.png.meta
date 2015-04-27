@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5daaf972ce6da22458a87e4a49962f47
-timeCreated: 1430142022
+timeCreated: 1430151308
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -266,18 +266,18 @@ TextureImporter:
         y: 40
         width: 69
         height: 85
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: yelRun1
       rect:
         serializedVersion: 2
         x: 278
-        y: 236
+        y: 237
         width: 66
-        height: 83
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 82
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: yelJump0
       rect:
@@ -286,8 +286,8 @@ TextureImporter:
         y: 159
         width: 68
         height: 67
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: yelJump1
       rect:
@@ -296,8 +296,8 @@ TextureImporter:
         y: 337
         width: 67
         height: 83
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: yelFly0
       rect:
@@ -306,8 +306,8 @@ TextureImporter:
         y: 332
         width: 68
         height: 84
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: yelFly1
       rect:
@@ -316,8 +316,8 @@ TextureImporter:
         y: 228
         width: 68
         height: 86
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: broJump0
       rect:
