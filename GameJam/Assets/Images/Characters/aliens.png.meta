@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5daaf972ce6da22458a87e4a49962f47
-timeCreated: 1430141221
+timeCreated: 1430142022
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,6 +28,12 @@ TextureImporter:
     21300042: yelJump1
     21300044: yelFly0
     21300046: yelFly1
+    21300048: broJump0
+    21300050: broJump1
+    21300052: broRun0
+    21300054: broRun1
+    21300056: broFly0
+    21300058: broFly1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -310,6 +316,66 @@ TextureImporter:
         y: 228
         width: 68
         height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: broJump0
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 348
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: broJump1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 420
+        width: 64
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: broRun0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 133
+        width: 68
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: broRun1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 227
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: broFly0
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 320
+        width: 67
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: broFly1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 412
+        width: 68
+        height: 100
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
