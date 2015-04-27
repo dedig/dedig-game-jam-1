@@ -16,7 +16,6 @@ public class mortePersonagem : MonoBehaviour {
 		}
 
 		if (UIDerrota != null) {
-			print ("bunda");
 			UIDerrota.transform.GetComponent<UIMenuDeDerrota> ().Derrota ();
 		} else {
 			Debug.LogError("Não há UIDerrota aqui");
