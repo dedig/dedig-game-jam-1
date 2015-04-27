@@ -16,6 +16,7 @@ public class UIMenuDePausa : MonoBehaviour {
 	}
 
 	public void GoToMainMenu(){
-
+		Time.timeScale = 1;
+		Application.LoadLevel (0);
 	}
 }

@@ -13,7 +13,7 @@ public class mortePersonagem : MonoBehaviour {
 		else{
 				PlayerPrefs.SetInt("best",0);
 			}
-
-		Application.LoadLevel(0);
+		GameObject go = GameObject.FindGameObjectWithTag ("Finish");
+		go.transform.GetComponent<UIMenuDeDerrota>().Derrota();
 	}
 }

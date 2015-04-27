@@ -27,10 +27,7 @@ public class ControladorArvores : MonoBehaviour {
 		velocidadeVerdadeira = ControladorColunas.velocidade * velocidade;
 
 		if (velocidadeVerdadeira == 0) {
-			print (ControladorColunas.velocidade);
-			print (velocidade);
-			print (ControladorColunas.velocidade * velocidade);
-			Debug.LogError("Velocidade 0!!111");
+			velocidadeVerdadeira = 2 * velocidade;
 		}
 		
 		//Valida randomRange
@@ -47,5 +44,4 @@ public class ControladorArvores : MonoBehaviour {
 			}
 		}
 	}
-
 }
