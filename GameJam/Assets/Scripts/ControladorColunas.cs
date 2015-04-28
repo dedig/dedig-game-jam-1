@@ -32,6 +32,9 @@ public class ControladorColunas : MonoBehaviour {
 		}
 
 		//
+		ultimaAltura = 1;
+		penultimaAltura = 1;
+		AntiPenultimaAltura = 1;
 
 
 		t = texto.GetComponent<Text> ();
