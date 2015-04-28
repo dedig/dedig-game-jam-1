@@ -6,20 +6,16 @@ public class UIMainMenu : MonoBehaviour {
 
 	public GameObject pauseMenu, scoreCanvas;
 	public GameObject somHabilitado, somDesabilitado;
-	public GameObject textoJogar;
-	public int margemTexto;
-	RectTransform textoRect;
 	static bool audioHabilitado = true;
 	float posicaoTexto = 1.0f;
 
 
 	void Start(){
 		// Validação de menu de pausa
-		if (pauseMenu == null || textoJogar == null) {
+		if (pauseMenu == null) {
 			Debug.LogError("Está faltando um gameobject");
 			Debug.Break();
 		}
-		textoRect = textoJogar.transform.GetComponent<RectTransform> ();
 	}
 
 	public void IniciaJogo(){
@@ -41,11 +37,4 @@ public class UIMainMenu : MonoBehaviour {
 			somDesabilitado.SetActive(false);
 		}
 	}
-
-	void FixedUpdate(){
-		posicaoTexto = Mathf.Sin (Time.time);
-		posicaoTexto = posicaoTexto*50 + margemTexto;
-		textoRect.anchoredPosition = new Vector2 (textoRect.anchoredPosition.x, posicaoTexto);
-	}
-
 }
