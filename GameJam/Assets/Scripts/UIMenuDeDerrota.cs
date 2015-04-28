@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIMenuDeDerrota : MonoBehaviour {
 
-	public GameObject pauseMenu, derrotaMenu;
+	public GameObject pauseMenu, derrotaMenu, scoreCanvas;
 	public Text pontuacaoAtual, melhorPontuacao;
 
 	void Start(){
@@ -16,9 +16,11 @@ public class UIMenuDeDerrota : MonoBehaviour {
 	}
 
 	public void Derrota(){
-		Time.timeScale = 0;
+		Time.timeScale = 1;
 		pauseMenu.SetActive (false);
 		derrotaMenu.SetActive (true);
+		scoreCanvas.SetActive (false);
+
 		pontuacaoAtual.text = ControladorColunas.pontuacao.ToString();
 		melhorPontuacao.text = PlayerPrefs.GetInt ("best").ToString ();
 	}
