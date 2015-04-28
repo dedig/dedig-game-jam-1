@@ -12,7 +12,12 @@ public class GeradorDeTiles : MonoBehaviour {
 	void FixedUpdate () {
 		this.transform.Translate ((Vector3.left * ControladorColunas.velocidade)* Time.deltaTime);
 		if (this.transform.position.x <= ControladorColunas.morte) {
-			respawn();
+			if(ControladorColunas.jogando){
+				respawn();
+			} else {
+				var posicao = new Vector3(ControladorColunas.nascimento,1,0);
+				this.transform.position = posicao;
+			}
 		}
 	}
 
@@ -24,12 +29,8 @@ public class GeradorDeTiles : MonoBehaviour {
 
 	void posicionar(){
 		altura = calcularProximo ();
-
-
-
 		this.transform.Translate (Vector3.up * altura);
 		ControladorColunas.step(altura);
-
 	}
 
 

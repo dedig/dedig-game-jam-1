@@ -16,12 +16,15 @@ public class UIMainMenu : MonoBehaviour {
 			Debug.LogError("Está faltando um gameobject");
 			Debug.Break();
 		}
+		ControladorColunas.multiplicadorDaPontucao = 0;
 	}
 
 	public void IniciaJogo(){
 		scoreCanvas.SetActive (true);
 		pauseMenu.SetActive (true);
 		gameObject.SetActive (false);
+		ControladorColunas.jogando = true;
+		ControladorColunas.multiplicadorDaPontucao = 5;
 	}
 
 	public void AlternarSom(){

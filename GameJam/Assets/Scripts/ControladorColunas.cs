@@ -18,6 +18,7 @@ public class ControladorColunas : MonoBehaviour {
 	public static int nascimento;
 	public static float pontuacao = 0;
 	public static float multiplicadorDaPontucao;
+	public static bool jogando;
 	
 
 
@@ -25,9 +26,12 @@ public class ControladorColunas : MonoBehaviour {
 	public static int ultimaAltura,penultimaAltura,AntiPenultimaAltura;
 
 	void Start () {
+		//jogador está no menu principal
+		jogando = false;
+
 		//gerar tiles
 		int TileRandom = Random.Range (0, Colunas.Count);
-		for (byte i = 0; i <=18; i++) {
+		for (byte i = 0; i <=19; i++) {
 			Instantiate(Colunas[TileRandom],new Vector3(i,0,0),Quaternion.identity);
 		}
 
@@ -52,18 +56,19 @@ public class ControladorColunas : MonoBehaviour {
 	}
 	
 	void Update () {
-		multiplicadorDaPontucao = pontuaocaoRatio;
-		velocidade = velocidadeDasColunas;
-		morte = localDaMorte;
-		nascimento = LocalDoNascimento;
-		pontuacaoLocal += Time.deltaTime;
-		pontuacao = Mathf.Floor(pontuacaoLocal*pontuaocaoRatio);
-		t.text = pontuacao.ToString();
-		if (pontuacao % 50 == 0) {
-			velocidadeDasColunas += incrementoDaVelocidade;
-			pontuacaoLocal++;
+		if (ControladorColunas.jogando) {
+			multiplicadorDaPontucao = pontuaocaoRatio;
+			velocidade = velocidadeDasColunas;
+			morte = localDaMorte;
+			nascimento = LocalDoNascimento;
+			pontuacaoLocal += Time.deltaTime;
+			pontuacao = Mathf.Floor (pontuacaoLocal * pontuaocaoRatio);
+			t.text = pontuacao.ToString ();
+			if (pontuacao % 50 == 0) {
+				velocidadeDasColunas += incrementoDaVelocidade;
+				pontuacaoLocal++;
+			}
 		}
-
 	}
 
 	public static void step(int p){
