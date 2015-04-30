@@ -34,7 +34,7 @@ public class MoveFundoInfinitamente : MonoBehaviour {
 	void Update () {
 		transform.Translate (new Vector3((-velocidade * Time.deltaTime), 0, 0));
 		if(transform.localPosition.x <= posicaoInicial - tamanhoDoAsset){
-			transform.localPosition = new Vector3(posicaoInicial,0,0);
+			transform.Translate(new Vector3(tamanhoDoAsset,0,0));
 		}
 	}
 }
