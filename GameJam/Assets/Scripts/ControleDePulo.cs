@@ -7,7 +7,9 @@ using System.Collections;
 public class ControleDePulo : MonoBehaviour {
 	
 	private CharacterController myController;
-	//private Rigidbody myRigid;
+	public ParticleSystem jumpParticle;
+	public ParticleSystem runParticle;
+	public Particle particle;
 	private Vector3 moveDir;
 	public float gravity;
 	
@@ -38,7 +40,7 @@ public class ControleDePulo : MonoBehaviour {
 		myController.Move (Vector3.zero);
 		anim = GetComponentInChildren<Animator> ();
 		supportsTouch = Input.touchSupported;
-		//Debug.Log ("Suporte a touch? " + supportsTouch.ToString());
+		jumpParticle = GetComponentInChildren<ParticleSystem> ();
 	}
 	
 	// Update is called once per frame
@@ -67,6 +69,7 @@ public class ControleDePulo : MonoBehaviour {
 		if (!isGrounded) {
 			moveDir.y += gravity * Time.deltaTime;
 			anim.SetBool("air", true);
+			runParticle.enableEmission = false;
 		}
 		
 		
@@ -76,6 +79,7 @@ public class ControleDePulo : MonoBehaviour {
 		//checa de novo se nao mudou a situacao do grounded
 		if (myController.isGrounded && !isGrounded) {
 			isGrounded = true;
+			runParticle.enableEmission = true;
 			anim.SetBool("air", false);
 			moveDir.y = 0;
 		}
@@ -89,15 +93,21 @@ public class ControleDePulo : MonoBehaviour {
 			timeStartPulo = Time.time;
 			noArPulando = true;
 			isGrounded = false;
+			runParticle.enableEmission = false;
 			moveDir.y = baseJumpForce;
 			puloSound.Play();
 			anim.Play("jump");
 			anim.SetBool("air", true);
+
+			jumpParticle.Emit(30);
+
 			
 		}
 		
 	}
+
 	
+
 	
 	
 }
