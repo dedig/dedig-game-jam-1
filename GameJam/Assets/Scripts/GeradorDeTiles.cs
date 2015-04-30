@@ -4,14 +4,16 @@ using System.Collections;
 public class GeradorDeTiles : MonoBehaviour {
 
 	public int altura;
+	private float erro;
 
 	void Start () {
 		this.transform.Translate (Vector3.up);
 	}
 	
-	void FixedUpdate () {
-		this.transform.Translate ((Vector3.left * ControladorColunas.velocidade)* Time.deltaTime);
+	void Update () {
 		if (this.transform.position.x <= ControladorColunas.morte) {
+			erro = Mathf.Abs(this.transform.position.x - ControladorColunas.morte);
+
 			if(ControladorColunas.jogando){
 				respawn();
 			} else {
@@ -19,12 +21,17 @@ public class GeradorDeTiles : MonoBehaviour {
 				this.transform.position = posicao;
 			}
 		}
+		this.transform.Translate ((Vector3.left * ControladorColunas.velocidade) * Time.deltaTime);
+
 	}
 
 	void respawn(){
+
 		var posicao = new Vector3(ControladorColunas.nascimento,0,0);
 		this.transform.position = posicao;
 		posicionar ();
+		this.transform.Translate (Vector3.left * erro);
+
 	}
 
 	void posicionar(){
