@@ -6,6 +6,8 @@ public class mortePersonagem : MonoBehaviour {
 	public GameObject UIDerrota;
 	public float intensidadeCameraShake, tempoCameraShake;
 
+	public AudioSource boomSound;
+
 	void OnTriggerEnter(Collider other) {
 		if (PlayerPrefs.HasKey ("best")) {
 			int oldbest = PlayerPrefs.GetInt ("best");
@@ -28,6 +30,7 @@ public class mortePersonagem : MonoBehaviour {
 
 	void emitParticlesAndDisappear(GameObject thePlayer){
 		//emite particulas de morte
+		GameObject.Find ("bgm").GetComponent<AudioSource> ().Stop ();
 		Transform deathParticleTransform = GameObject.Find ("deathParticle").transform;
 		deathParticleTransform.position = thePlayer.transform.position;
 		thePlayer.SetActive (false);
@@ -37,7 +40,7 @@ public class mortePersonagem : MonoBehaviour {
 		randomColorForParticle.g = Random.Range (0, 1f);
 		theSystem.startColor = randomColorForParticle;
 		theSystem.Emit (128);
-
+		boomSound.Play ();
 		TelaFlashBranco.instancia.PiscaFade (Color.black, 4.5f, true);
 
 		Camera.main.GetComponent<CameraScreenShake> ().ShakeScreen (intensidadeCameraShake, tempoCameraShake);
