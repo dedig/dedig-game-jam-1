@@ -4,6 +4,7 @@ using System.Collections;
 public class mortePersonagem : MonoBehaviour {
 
 	public GameObject UIDerrota;
+	public float intensidadeCameraShake, tempoCameraShake;
 
 	void OnTriggerEnter(Collider other) {
 		if (PlayerPrefs.HasKey ("best")) {
@@ -36,6 +37,10 @@ public class mortePersonagem : MonoBehaviour {
 		randomColorForParticle.g = Random.Range (0, 1f);
 		theSystem.startColor = randomColorForParticle;
 		theSystem.Emit (128);
+
+		TelaFlashBranco.instancia.PiscaFade (Color.black, 4.5f, true);
+
+		Camera.main.GetComponent<CameraScreenShake> ().ShakeScreen (intensidadeCameraShake, tempoCameraShake);
 
 		GameObject.Find ("Controlador Das Colunas").GetComponent<ControladorColunas> ().enabled = false;
 	}

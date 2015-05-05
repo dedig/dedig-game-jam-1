@@ -48,10 +48,10 @@ public class ControladorColunas : MonoBehaviour {
 		nascimento = LocalDoNascimento;
 		//pegar best anterior
 		if (PlayerPrefs.HasKey ("best")) {
-			b.text = "Recorde: "+PlayerPrefs.GetInt ("best").ToString();
+			b.text = PlayerPrefs.GetInt ("best").ToString();
 		} 
 		else {
-			b.text = "Recorde: 0";
+			b.text = "0";
 		}
 	}
 	

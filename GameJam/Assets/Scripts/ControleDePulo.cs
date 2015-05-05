@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 /// <summary>
-/// Pulo. faz o personagem pular
+/// Pulo. faz o personagem pular, emitir particulas ao andar e pular e piscar ao ser
+/// arrastado para tras. Esse script controla a maioria dos outros relacionados a acoes
+/// realizadas pelo jogador ou sobre ele.
 /// esse script vai no gameobject do personagem (o gameobject que tiver o rigidbody dele)
 /// </summary>
 public class ControleDePulo : MonoBehaviour {
@@ -30,22 +32,40 @@ public class ControleDePulo : MonoBehaviour {
 	private Touch theTouch;
 	
 	private Animator anim;
-	
+
+	private SpriteFlashBranco flashScript;
+
+	private float ultimaPosX;
+
+	public float posXAtual;
 	
 	// Use this for initialization
 	void Start () {
 		myController = GetComponent<CharacterController> ();
-		
+
+
 		
 		myController.Move (Vector3.zero);
 		anim = GetComponentInChildren<Animator> ();
 		supportsTouch = Input.touchSupported;
 		jumpParticle = GetComponentInChildren<ParticleSystem> ();
+
+		flashScript = GetComponentInChildren<SpriteFlashBranco> ();
+
+		posXAtual = transform.position.x;
+		ultimaPosX = posXAtual;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		isGrounded = myController.isGrounded;
+
+		posXAtual = transform.position.x;
+
+		if (ultimaPosX != posXAtual)
+			flashScript.Piscar (0.5f, 0.25f);
+
+		ultimaPosX = posXAtual;
 		
 		
 		if (isGrounded && noArPulando) {
@@ -99,9 +119,9 @@ public class ControleDePulo : MonoBehaviour {
 			anim.Play("jump");
 			anim.SetBool("air", true);
 
+
 			jumpParticle.Emit(30);
 
-			
 		}
 		
 	}
