@@ -1,23 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIMenuDePausa.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIMainMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/UIMainMenu.cs" Line="14" Column="18" />
-      <File FileName="Assets/Scripts/GeradorDeTiles.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UIMenuDePausa.cs" Line="19" Column="22" />
-      <File FileName="Assets/Scripts/UIMenuDeDerrota.cs" Line="30" Column="29" />
-      <File FileName="Assets/Scripts/mortePersonagem.cs" Line="18" Column="27" />
-      <File FileName="Assets/Scripts/ControladorColunas.cs" Line="68" Column="1" />
-      <File FileName="Assets/Scripts/DuplicaFundo.cs" Line="20" Column="68" />
-      <File FileName="Assets/Scripts/ControladorArvores.cs" Line="15" Column="5" />
-      <File FileName="Assets/Scripts/ControleDePulo.cs" Line="24" Column="26" />
+      <File FileName="Assets/Scripts/UIMainMenu.cs" Line="84" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="UIMenuDePausa.cs" selected="True" />
+              <Node name="UIMainMenu.cs" selected="True" />
             </Node>
           </Node>
         </State>
